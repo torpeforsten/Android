@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:minHeight="48dp" />
+
+    <!-- Owns a car checkbox -->
+    <CheckBox
+        android:id="@+id/cb_owns_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/checkbox_owns_car" />
+
+    <!-- Age of car input (disabled initially) -->
+    <EditText
+        android:id="@+id/et_car_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="@string/hint_car_age"
+        android:minHeight="48dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save" />
+
+    <!-- Summary Text -->
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone" />
+
+    <!-- Advanced options layout (Initially hidden) -->
+    <LinearLayout
+        android:id="@+id/advanced_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="16dp">
+
+        <!-- Four-wheel-drive (4WD) Toggle -->
+        <ToggleButton
+            android:id="@+id/toggle_4wd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/four_wheel_drive" />
+
+        <!-- Car Type (RadioGroup with three options) -->
+        <RadioGroup
+            android:id="@+id/radio_group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <RadioButton
+                android:id="@+id/radio_station_wagon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/station_wagon" />
+            <RadioButton
+                android:id="@+id/radio_sedan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sedan" />
+            <RadioButton
+                android:id="@+id/radio_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sport" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

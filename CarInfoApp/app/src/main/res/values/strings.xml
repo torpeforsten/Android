@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Car Info App</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_car_age">Enter car age (1–10)</string>
+    <string name="button_save">Save</string>
+    <string name="summary_header">Summary:</string>
+    <string name="checkbox_owns_car">Owns a car</string>
+    <string name="toast_enter_name">Please enter your name</string>
+    <string name="advanced_options">Advanced options</string>
+    <string name="station_wagon">Station Wagon</string>
+    <string name="sedan">Sedan</string>
+    <string name="sport">Sport</string>
+    <string name="error_name_required">ErrorName</string>
+    <string name="error_invalid_age">ErrorAge</string>
+    <string name="four_wheel_drive">Four-Wheel Drive</string>
+
+</resources>
